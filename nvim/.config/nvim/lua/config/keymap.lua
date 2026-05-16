@@ -10,7 +10,7 @@ vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagn
 vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>:bd!<CR>", { desc = "Exit terminal mode", silent = true })
 
 -- Exit insert mode
-vim.keymap.set("i", "jj", "<Esc>", { desc = "Exit insert mode", silent = true })
+vim.keymap.set("i", "jk", "<Esc>", { desc = "Exit insert mode", silent = true })
 
 -- Vertical navigation
 vim.keymap.set("n", "<S-j>", "5j", { desc = "Jump ten spaces down", silent = true })
