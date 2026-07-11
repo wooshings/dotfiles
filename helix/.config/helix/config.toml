@@ -1,0 +1,40 @@
+theme = "catppuccin_mocha"
+
+[editor]
+line-number = "relative"
+mouse = false
+color-modes = true
+
+[editor.lsp]
+display-inlay-hints = false
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[keys.normal]
+J = [
+  "move_line_down",
+  "move_line_down",
+  "move_line_down",
+  "move_line_down",
+  "move_line_down"
+]
+
+K = [
+  "move_line_up",
+  "move_line_up",
+  "move_line_up",
+  "move_line_up",
+  "move_line_up"
+]
+
+D = [
+  "ensure_selections_forward",
+  "extend_to_line_end",
+  "delete_selection"
+]
+
+[keys.insert]
+j = { k = "normal_mode" }
